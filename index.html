@@ -4,9 +4,75 @@
 <head>
   <meta charset="utf-8">
   <title>Music History</title>
+  <link href="styles.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
+	<main>
+		<header> View Music | <a href="#">Add Music </a> | <a href="#">Profile </a> </header>	
+		<nav id= "left">
+			<div> 
+			<p> Song Length: </p>
+			<input type="range">
+			</div> 
+			
+			<div id="artist">
+			<p> Artist: </p>
+				<select>
+ 					<option value="Duran Duran">Duran Duran
+ 					</option>
+ 					<option value="Oingo Boingo">Oingo Boingo </option>
+  					<option value="Wang Chung">Wang Chung     </option>
+  					<option value="Human League">Human League  </option>
+  					<option value="Japan">Japan </option>
+				</select>
+			</div>
+
+			<div id="album"> 
+			<p> Album: </p>
+				<select>
+ 					<option value="Rio"> Rio
+ 					</option>
+ 					<option value="Boingo">Boingo </option>
+  					<option value="Points on the Curve   "> Points on the Curve </option>
+  					<option value="Dare "> Dare </option>
+  					<option value="Gentlemen Take Polaroids">Gentlemen Take Polaroids </option>
+				</select>
+			</div>
+			
+			
+			<div id= "genre">
+			<p> Genre: </p>
+				<form action="">
+  					<input type="radio" name="genre" value="Rock"> Rock    
+  					<input type="radio" name="genre" value="Pop">     Pop <br>
+  					<input type="radio" name="genre" value="Blues"> Blues 
+  					<input type="radio" name="genre" value="Jazz">     Jazz <br>
+  					<input type="radio" name="genre" value="Classical"> Classical 
+  					<input type="radio" name="genre" value="Hip-Hop">        Hip-Hop <br>
+				</form>
+			</div>
+			
+			<div id= "filter">
+				<button type="button">Filter</button>
+			</div>
+		</nav>
+		<aside>
+			<div> 
+				<h2> Song Name </h2>
+				<p> Artist Name  |  Album Name  |  Genre </p>
+				<p> </p>
+				<h2> Song Name </h2>
+				<p> Artist Name  |  Album Name  |  Genre </p>
+				<p> </p>
+				<h2> Song Name</h2>
+				<p> Artist Name  |  Album Name  |  Genre </p>
+				<p> </p>
+				<h2> Song Name </h2>
+				<p> Artist Name  |  Album Name  |  Genre </p>
+				<p> </p>
+		</aside>		
+	</main>	
 
 
 </body>
