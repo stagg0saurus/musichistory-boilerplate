@@ -21,7 +21,7 @@ songBoard = {
 	song: [], 
 	artist: [], 
 	album: [], 
-	genre: []
+	
 
 }
 
@@ -45,23 +45,23 @@ for (var j =0; j < songBoard.song.length; j++) {
 var songIn = document.getElementById("songIn");
 var artistIn = document.getElementById("artistIn"); 
 var albumIn = document.getElementById("albumIn");   
-var addBtn = document.getElementById("addBtn")
-newSongArray = [];
+var addBtn = document.getElementById("addBtn");
+var otherRow = document.getElementById("otherRow");
 
-document.getElementById("addBtn").addEventListener('click', function(){
+document.getElementById("addBtn").addEventListener('click', function() {
 	songBoard.song.push(songIn.value) ;
 	songBoard.artist.push(artistIn.value);
 	songBoard.album.push(albumIn.value);
 
 	console.log(songBoard);
 	console.log(songs);
+	var newSongs =
+	`<h2 class='songOut'> ${songIn.value}</h2>
+	<p> <span class="artistOut">  ${artistIn.value}</span> | 
+	<span class = "albumOut">${albumIn.value}</span></p>`
+	otherRow.innerHTML += newSongs;
 	
-
-	for (var p =0; p < songBoard.song.length; p++) {
 	
-}
-
-
 });
 
 
