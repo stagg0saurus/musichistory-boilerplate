@@ -9,8 +9,20 @@
 
 <body>
 	<main>
-		<header> View Music | <a href="#">Add Music </a> | <a href="#">Profile </a> </header>	
-		<nav id= "left">
+
+<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!NAVBAR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+		
+		<header> 
+			<nav>
+			<a href="#" id="link-list">List Music</a> 
+			| <a href="#" id="link-add">Add Music </a> 
+			| <a href="#" id="link-home">Home </a> 
+		</nav>
+		</header>	
+		
+<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!LEFT CONTROL PANEL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+
+		<section id= "left">
 			<div> 
 			<p> Song Length: </p>
 			<input type="range">
@@ -56,9 +68,17 @@
 			<div id= "filter">
 				<button type="button">Filter</button>
 			</div>
-		</nav>
+		</section>
+
+<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!MAIN DISPLAY: LIST VIEW!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+
+<section id="home-view">
+  Home
+</section>
+
 		<aside>
 			<div> 
+			<section class="hidden" id="list-view">
 				<h2 class="songOut"> Song Name </h2>
 				<p> <span class="artistOut"> Artist Name</span>  | <span class = "albumOut"> Album Name </span>  |  Genre </p>
 				<p> </p>
@@ -70,6 +90,7 @@
 				<p> </p>
 				<h2 class="songOut"> Song Name </h2>
 				<p> <span class="artistOut"> Artist Name </span>  | <span class = "albumOut">  Album Name </span> |  Genre </p>
+				</div>
 				<div id=otherRow>
 				<p> </p>
 				<h2 class="songOut"> Song Name </h2>
@@ -84,8 +105,30 @@
 				<p> <span class="artistOut"> Artist Name </span>  | <span class = "albumOut">  Album Name </span> |  Genre </p>
 				<p> </p>
 				</div>
-		</aside>		
+				</section>
+		</aside>
+
+<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!MAIN DISPLAY: ADD VIEW!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+
+<section class="hidden" id="add-view">
+	<ul>
+ <li>Song:<!-- <br> -->
+ <input class="addInput" id="songIn" type ="text"></li>
+ <br>
+  <li>Artist:<!-- <br> -->
+ <input class="addInput" id="artistIn" type="text"></li>
+ <br>
+ <li>Album:<!-- <br> -->
+  <input class="addInput" id="albumIn" type="text"></li>
+  <br>
+  <li><button id="addBtn">ADD</button></li>
+
+</section>
+
+
 	</main>	
 <script src="songs.js"></script> 
+<script type="text/javascript" src="list.js"></script>
+<script type="text/javascript" src="add.js"></script>
 </body>
 </html>

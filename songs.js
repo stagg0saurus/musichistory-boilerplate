@@ -15,7 +15,6 @@ for (var i = 0; i < songs.length; i++) {
 	
 	}
 
-console.log(songs); 
 
 
 songBoard = {
@@ -42,7 +41,28 @@ for (var j =0; j < songBoard.song.length; j++) {
 }
 
 
-console.log(songBoard);
+
+var songIn = document.getElementById("songIn");
+var artistIn = document.getElementById("artistIn"); 
+var albumIn = document.getElementById("albumIn");   
+var addBtn = document.getElementById("addBtn")
+newSongArray = [];
+
+document.getElementById("addBtn").addEventListener('click', function(){
+	songBoard.song.push(songIn.value) ;
+	songBoard.artist.push(artistIn.value);
+	songBoard.album.push(albumIn.value);
+
+	console.log(songBoard);
+	console.log(songs);
 	
+
+	for (var p =0; p < songBoard.song.length; p++) {
+	
+}
+
+
+});
+
 
 
